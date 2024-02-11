@@ -30,8 +30,8 @@ mpDraw = mp.solutions.drawing_utils
 mpFaceMesh = mp.solutions.face_mesh
 faceMesh = mpFaceMesh.FaceMesh(max_num_faces=2)
 drawSpec = mpDraw.DrawingSpec(thickness=1, circle_radius=1)
-API_KEY = open('API_KEY').read()
-SEARCH_KEY = open('SEARCH_ENG_ID').read()
+API_KEY = open('API_KEY').read()   #Googles API KEY Imade Into Another File 
+SEARCH_KEY = open('SEARCH_ENG_ID').read() #Google Search Engine Maker KEY Which I Made It IN Another File
 
 def send_whatsapp_message(number, message):
     pywhatkit.sendwhatmsg_instantly(f"+971{number}", message)
